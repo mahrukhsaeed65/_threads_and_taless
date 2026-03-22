@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threads & Tales — Handmade Crochet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="brand">
+                <a href="#" class="brand-link">Threads & Tales</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#products" class="nav-link">Collection</a></li>
+                <li><a href="#about" class="nav-link">Our Story</a></li>
+                <li><a href="#order" class="nav-link">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Threads & Tales</h1>
+            <p class="hero-tagline">Handmade crochet pieces crafted with love 🧶</p>
+            <a href="#products" class="btn btn-primary">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Our Collection</h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?w=400&h=400&fit=crop" alt="Rose Crochet Bag">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Rose Crochet Bag</h3>
+                        <p class="product-price">PKR 2,500</p>
+                        <a href="#order" class="btn btn-secondary" onclick="prefillProduct('Rose Crochet Bag')">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1605218427368-35b089687909?w=400&h=400&fit=crop" alt="Mini Bear Pin">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Mini Bear Pin</h3>
+                        <p class="product-price">PKR 450</p>
+                        <a href="#order" class="btn btn-secondary" onclick="prefillProduct('Mini Bear Pin')">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=400&fit=crop" alt="Crochet Flowers">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Crochet Flowers</h3>
+                        <p class="product-price">PKR 800</p>
+                        <a href="#order" class="btn btn-secondary" onclick="prefillProduct('Crochet Flowers')">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1584184804429-2a53628d71e4?w=400&h=400&fit=crop" alt="Cozy Scarf">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Cozy Winter Scarf</h3>
+                        <p class="product-price">PKR 1,800</p>
+                        <a href="#order" class="btn btn-secondary" onclick="prefillProduct('Cozy Winter Scarf')">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1623600990468-4f7b0c4c38df?w=400&h=400&fit=crop" alt="Amigurumi Bunny">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Amigurumi Bunny</h3>
+                        <p class="product-price">PKR 1,200</p>
+                        <a href="#order" class="btn btn-secondary" onclick="prefillProduct('Amigurumi Bunny')">Order Now</a>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1574621100236-d25b64cfd647?w=400&h=400&fit=crop" alt="Crochet Coasters">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Crochet Coasters (Set of 4)</h3>
+                        <p class="product-price">PKR 600</p>
+                        <a href="#order" class="btn btn-secondary" onclick="prefillProduct('Crochet Coasters')">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">Our Story</h2>
+                <p class="about-text">
+                    Threads & Tales is a handmade crochet brand where every piece is crafted with care, patience, and creativity. Each product tells a soft, cozy story.
+                </p>
+                <p class="about-text">
+                    From the first loop to the final stitch, our creations are made with love and attention to detail. We believe in the warmth of handmade items that carry a piece of the maker's heart.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="order">
+        <div class="container">
+            <h2 class="section-title">Place Your Order 💌</h2>
+            
+            <!-- Order Options -->
+            <div class="order-options">
+                <!-- WhatsApp Order -->
+                <div class="order-card">
+                    <div class="order-icon">💬</div>
+                    <h3 class="order-method">Order via WhatsApp</h3>
+                    <p class="order-description">Quick and easy ordering through WhatsApp</p>
+                    <a href="https://wa.me/923001234567?text=Hi! I'm interested in placing an order from Threads & Tales." 
+                       target="_blank" 
+                       class="btn btn-whatsapp">
+                        Chat on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Email Order -->
+                <div class="order-card">
+                    <div class="order-icon">📧</div>
+                    <h3 class="order-method">Order via Email</h3>
+                    <p class="order-description">Send us your order details via email</p>
+                    <a href="mailto:orders@threadsandtales.com?subject=New Order from Threads & Tales" 
+                       class="btn btn-email">
+                        Send Email
+                    </a>
+                </div>
+            </div>
+
+            <!-- Order Form -->
+            <div class="order-form-container">
+                <h3 class="form-title">Or fill out this form</h3>
+                <form id="orderForm" class="order-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="03XX-XXXXXXX">
+                    </div>
+                    <div class="form-group">
+                        <label for="product">Product Name</label>
+                        <input type="text" id="product" name="product" required placeholder="e.g., Rose Crochet Bag">
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Delivery Address</label>
+                        <textarea id="address" name="address" rows="3" required placeholder="Enter your complete address"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">Place Order</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Threads & Tales</h3>
+                    <p>Handmade with love 🧶</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#products">Collection</a>
+                    <a href="#about">Our Story</a>
+                    <a href="#order">Order</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Threads & Tales. All rights reserved.</p>
+                <p class="author">Made with 💖 by Mahrukh</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
